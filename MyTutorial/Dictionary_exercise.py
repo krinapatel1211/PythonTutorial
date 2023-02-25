@@ -10,3 +10,5 @@ for i, j in derek_dict.items():
     print(i, j)
 
 
+print(derek_dict.keys())
+print(derek_dict.values())
