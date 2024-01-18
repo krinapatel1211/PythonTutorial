@@ -1,0 +1,37 @@
+def word_exist(board, word):
+    row = 0
+    column = 0
+    word = list(word)
+    matched_list = []
+    for index_k, value_k in enumerate(word):
+        found = 0
+        for index_i, value_i in enumerate(board):
+            for index_j, value_j in enumerate(value_i):
+                    if value_j == value_k:
+                        print(value_k)
+                        matched_list.append(value_k)
+                        print(index_i, value_i)
+                        print(index_j, value_j)
+                        print(index_k, value_k)
+                        print("found: ", found)
+                    elif
+                except Exception as e:
+                        pass
+            if found == 1:
+                break
+    print(matched_list)
+    print(word)
+    if word == matched_list:
+        return True
+    else:
+        return False
+
+
+
+board = [['A','B','C','D'],
+        ['S','F','C','S'],
+        ['A','D','E','E']]
+
+word = 'EBCCEA'
+isexist = word_exist(board, word)
+print(isexist)
